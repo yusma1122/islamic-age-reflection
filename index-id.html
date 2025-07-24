@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Age and Gratitude Reflection</title>
+  <title>Refleksi Usia dan Syukur</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     * {
@@ -24,32 +24,6 @@
     .container {
       max-width: 800px;
       margin: 0 auto;
-    }
-
-    .language-switch {
-      text-align: center;
-      margin-bottom: 1rem;
-      animation: fadeInUp 0.8s ease-out;
-    }
-
-    .language-switch a {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.5rem 1rem;
-      background: rgba(124, 160, 124, 0.1);
-      border: 1px solid rgba(124, 160, 124, 0.3);
-      border-radius: 8px;
-      text-decoration: none;
-      color: #4a5d4a;
-      font-size: 0.9rem;
-      font-weight: 500;
-      transition: all 0.3s ease;
-    }
-
-    .language-switch a:hover {
-      background: rgba(124, 160, 124, 0.2);
-      transform: translateY(-2px);
     }
 
     .header {
@@ -159,6 +133,32 @@
     .result-card.show {
       opacity: 1;
       transform: translateY(0);
+    }
+
+    .language-switch {
+      text-align: center;
+      margin-bottom: 1rem;
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    .language-switch a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: rgba(124, 160, 124, 0.1);
+      border: 1px solid rgba(124, 160, 124, 0.3);
+      border-radius: 8px;
+      text-decoration: none;
+      color: #4a5d4a;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .language-switch a:hover {
+      background: rgba(124, 160, 124, 0.2);
+      transform: translateY(-2px);
     }
 
     .hadis-info {
@@ -445,15 +445,14 @@
 </head>
 <body>
   <div class="container">
-
     <div class="header">
-      <h1>How Long Have We Been Living?</h1>
-      <p>Time reflection to cultivate gratitude</p>
+      <h1>Sudah Berapa Lama Kita Hidup?</h1>
+      <p>Refleksi waktu yang telah berlalu untuk menumbuhkan rasa syukur</p>
 
       <div class="language-switch" style="margin-top: 1rem;">
-     <p style="font-size: 0.8rem;"><i>Click here to switch to</i></p>
-      <a href="index-id.html">
-        🇮🇩 Bahasa Indonesia
+     <p style="font-size: 0.8rem;"><i>Klik di sini untuk ubah ke</i></p>
+      <a href="index.html">
+        🇬🇧 English Language
       </a>
     </div>
     </div>
@@ -461,36 +460,36 @@
     <div class="input-section">
       <div class="input-group">
         <input type="date" id="birthdate" />
-        <button class="btn btn-primary" onclick="hitungUsia()">Calculate Age</button>
+        <button class="btn btn-primary" onclick="hitungUsia()">Hitung Usia</button>
       </div>
     </div>
 
     <div id="result" class="result-card">
-      <!-- Hadith about ummah's lifespan -->
+      <!-- Hadis tentang umur umat -->
       <div class="hadis-info">
         <div class="hadis-arab">أَعْمَارُ أُمَّتِي مَا بَيْنَ السِّتِّينَ إِلَى السَّبْعِينَ وَأَقَلُّهُمْ مَنْ يَجُوزُ ذَلِكَ</div>
         <div class="hadis-latin">"A'maaru ummatii maa baynas sittiina ilas sab'iina wa aqalluhum man yajozu dzaalik"</div>
-        <div class="hadis-terjemah">"The lifespan of my ummah is between 60 to 70 years, and few of them exceed that"</div>
-        <div class="hadis-source">- Narrated by Tirmidhi, Ibn Majah</div>
+        <div class="hadis-terjemah">"Umur umatku antara 60 hingga 70 tahun, dan sedikit dari mereka yang melebihi itu"</div>
+        <div class="hadis-source">- HR. Tirmidzi, Ibnu Majah</div>
       </div>
 
       <div class="timeline-container">
         <div class="timeline-label">
-          <span>⏳ Life Journey</span>
-          <span id="percentageText">0% of 70 years</span>
+          <span>⏳ Perjalanan Hidup</span>
+          <span id="percentageText">0% dari 70 tahun</span>
         </div>
         <div id="timeline">
           <div class="progress" id="progressBar"></div>
         </div>
       </div>
 
-      <!-- Time awareness warning -->
+      <!-- Peringatan kesadaran waktu -->
       <div class="time-awareness" id="timeAwareness">
         <div class="urgent-reminder">
-          ⚠️ <span id="urgentText">Time Keeps Moving!</span>
+          ⚠️ <span id="urgentText">Waktu Terus Berjalan!</span>
         </div>
         <div class="time-facts" id="timeFacts">
-          Every second that passes will never return. Make the best use of the remaining time.
+          Setiap detik yang berlalu tidak akan pernah kembali. Manfaatkan waktu yang tersisa dengan sebaik-baiknya.
         </div>
       </div>
 
@@ -500,7 +499,7 @@
     </div>
 
     <div class="kebaikan-section">
-      <button class="btn btn-secondary" onclick="tampilkanKebaikan()">✨ Do Good Deeds</button>
+      <button class="btn btn-secondary" onclick="tampilkanKebaikan()">✨ Lakukan Kebaikan</button>
       <div id="aksiKebaikan"></div>
     </div>
 
@@ -509,7 +508,7 @@
     <!-- Footer Credit -->
     <footer style="text-align: center; margin-top: 3rem; padding: 2rem; background: rgba(255, 255, 255, 0.6); border-radius: 20px; backdrop-filter: blur(10px);">
       <div style="margin-bottom: 1rem;">
-        <p style="font-size: 0.9rem; color: #6b7280; margin-bottom: 0.5rem;">Created with ❤️ by</p>
+        <p style="font-size: 0.9rem; color: #6b7280; margin-bottom: 0.5rem;">Dibuat dengan ❤️ oleh</p>
         <p style="font-size: 1.1rem; font-weight: 600; color: #4a5d4a; margin-bottom: 0.5rem;">Yusma Rahman</p>
         <p style="font-size: 0.85rem; color: #8b7355; font-style: italic;">Junior Website Developer</p>
       </div>
@@ -535,7 +534,7 @@
         </a>
       </div>
       <p style="font-size: 0.8rem; color: #9ca3af; margin-top: 1rem; font-style: italic;">
-        "Whoever guides someone to goodness will have a reward like one who did it" - Narrated by Muslim
+        "Barangsiapa yang menunjukkan kepada kebaikan, maka baginya pahala seperti orang yang melakukannya" - HR. Muslim
       </p>
     </footer>
   </div>
@@ -544,7 +543,7 @@
     function hitungUsia() {
       const input = document.getElementById('birthdate').value;
       if (!input) {
-        alert("Please enter your birth date first.");
+        alert("Mohon isi tanggal lahir terlebih dahulu.");
         return;
       }
 
@@ -568,7 +567,7 @@
       setTimeout(() => {
         const progressBar = document.getElementById('progressBar');
         progressBar.style.width = `${percentLived}%`;
-        document.getElementById('percentageText').textContent = `${percentLived}% of 70 years`;
+        document.getElementById('percentageText').textContent = `${percentLived}% dari 70 tahun`;
       }, 300);
 
       // Update time awareness section
@@ -580,51 +579,51 @@
       const remainingJumats = Math.floor((targetAge * 52) - (ageDays / 7));
       const shalatPerformed = Math.floor(ageDays * 5);
       const remainingDays = Math.floor((targetAge - ageYears) * 365.25);
-      const sleepHours = Math.floor(ageYears * 365.25 * 8); // 8 hours sleep per day
+      const sleepHours = Math.floor(ageYears * 365.25 * 8); // 8 jam tidur per hari
 
       // Create stats grid with warning indicators and explanations
       const statsData = [
         { 
           number: ageYears, 
-          label: 'Years Lived', 
+          label: 'Tahun Hidup', 
           icon: '📅', 
           type: 'normal',
-          explanation: 'How long you have been breathing in this world'
+          explanation: 'Berapa lama Anda sudah menghirup udara di dunia ini'
         },
         { 
-          number: ageDays.toLocaleString('en-US'), 
-          label: 'Days Passed', 
+          number: ageDays.toLocaleString('id-ID'), 
+          label: 'Hari Berlalu', 
           icon: '⏰', 
           type: percentLived > 50 ? 'warning' : 'normal',
-          explanation: 'Number of sunrises and sunsets you have witnessed'
+          explanation: 'Jumlah matahari terbit dan terbenam yang telah Anda saksikan'
         },
         { 
-          number: shalatPerformed.toLocaleString('en-US'), 
-          label: 'Prayer Times', 
+          number: shalatPerformed.toLocaleString('id-ID'), 
+          label: 'Waktu Shalat', 
           icon: '🕌', 
           type: 'normal',
-          explanation: 'Opportunities to face Allah that have been given (5x daily)'
+          explanation: 'Kesempatan menghadap Allah yang telah diberikan (5x sehari)'
         },
         { 
           number: Math.floor(ageDays / 7), 
-          label: 'Fridays Passed', 
+          label: 'Jumat Dilewati', 
           icon: '🤲', 
           type: 'normal',
-          explanation: 'Special days for congregational prayer and listening to sermons'
+          explanation: 'Hari istimewa untuk shalat berjamaah dan mendengar khutbah'
         },
         { 
-          number: remainingDays > 0 ? remainingDays.toLocaleString('en-US') : '0', 
-          label: 'Days Remaining*', 
+          number: remainingDays > 0 ? remainingDays.toLocaleString('id-ID') : '0', 
+          label: 'Hari Tersisa*', 
           icon: '🌅', 
           type: remainingDays < 5000 ? 'warning' : 'normal',
-          explanation: 'Estimated opportunities still available for good deeds'
+          explanation: 'Estimasi kesempatan yang masih dimiliki untuk beramal shaleh'
         },
         { 
-          number: sleepHours.toLocaleString('en-US'), 
-          label: 'Hours Slept**', 
+          number: sleepHours.toLocaleString('id-ID'), 
+          label: 'Jam Tidur**', 
           icon: '😴', 
           type: 'normal',
-          explanation: 'Rest time needed by the body for recovery and health'
+          explanation: 'Waktu istirahat yang diperlukan tubuh untuk recovery dan kesehatan'
         }
       ];
 
@@ -641,10 +640,10 @@
       `).join('') + `
         <div class="stat-item" style="grid-column: 1 / -1; background: rgba(124, 160, 124, 0.1); border: 1px dashed #7ca07c;">
           <div style="font-size: 0.85rem; color: #6b7280; line-height: 1.4;">
-            <strong>💡 Reflection:</strong> Allah has given us ${percentLived}% of the average lifespan according to hadith. 
+            <strong>💡 Renungan:</strong> Allah telah memberikan kita ${percentLived}% dari umur rata-rata menurut hadis. 
             ${getAgeAdvice(percentLived)}
-            <br><small>*Estimate based on hadith, only Allah knows one's lifespan</small>
-            <br><small>**Calculation: Age × 365.25 days × 8 hours sleep per day. Sleep is a vital need and a blessing from Allah. <br>"And We made your sleep as a thing for rest" (QS. An-Naba: 9)</small>
+            <br><small>*Estimasi berdasarkan hadis, hanya Allah yang tahu ajal seseorang</small>
+            <br><small>**Perhitungan: Usia × 365.25 hari × 8 jam tidur per hari. Tidur adalah kebutuhan vital dan termasuk nikmat Allah. <br>"Dan Kami jadikan tidur kalian untuk istirahat" (QS. An-Naba: 9)</small>
           </div>
         </div>
       `;
@@ -656,10 +655,10 @@
 
     function updateTimeAwareness(ageYears, percentLived, ageDays) {
       const urgentMessages = [
-        { text: "Time Keeps Moving!", fact: "Every second that passes will never return." },
-        { text: "Life Is Very Short!", fact: `You have already spent ${ageDays.toLocaleString('en-US')} days of your life.` },
-        { text: "Death Is Getting Closer!", fact: "Every breath brings us closer to death." },
-        { text: "Make Use of Every Moment!", fact: "Hadith says this ummah's lifespan is only 60-70 years, and you're already at " + percentLived + "%." }
+        { text: "Waktu Terus Berjalan!", fact: "Setiap detik yang berlalu tidak akan pernah kembali." },
+        { text: "Hidup Ini Sangat Singkat!", fact: `Anda sudah menghabiskan ${ageDays.toLocaleString('id-ID')} hari dari hidup Anda.` },
+        { text: "Ajal Semakin Dekat!", fact: "Setiap nafas membawa kita lebih dekat pada kematian." },
+        { text: "Manfaatkan Setiap Momen!", fact: "Hadis mengatakan umur umat ini hanya 60-70 tahun, dan Anda sudah di " + percentLived + "%." }
       ];
 
       const message = urgentMessages[Math.floor(Math.random() * urgentMessages.length)];
@@ -668,24 +667,24 @@
       document.getElementById('timeFacts').innerHTML = `
         ${message.fact}
         <br><br>
-        <strong>📊 Shocking Facts:</strong>
-        <br>• If you sleep 8 hours/day, ${Math.floor(ageYears * 0.33)} years of your life were spent sleeping
-        <br>• Average humans spend 5 years of life waiting
-        <br>• Every day we lose 86,400 seconds that cannot be returned
+        <strong>📊 Fakta Mengejutkan:</strong>
+        <br>• Jika Anda tidur 8 jam/hari, ${Math.floor(ageYears * 0.33)} tahun hidup Anda dihabiskan untuk tidur
+        <br>• Rata-rata manusia menghabiskan 5 tahun hidup untuk menunggu
+        <br>• Setiap hari kita kehilangan 86.400 detik yang tidak bisa dikembalikan
         <br><br>
-        <em>"Two blessings that many people are deceived by: health and free time" - Narrated by Bukhari</em>
+        <em>"Nikmat yang sering dilupakan manusia adalah nikmat sehat dan waktu luang" - HR. Bukhari</em>
       `;
     }
 
     function getAgeAdvice(percentLived) {
       if (percentLived < 25) {
-        return 'Youth is the best investment for the hereafter. Increase seeking knowledge and doing good deeds!';
+        return 'Masa muda adalah investasi terbaik untuk akhirat. Perbanyak menuntut ilmu dan beramal shaleh!';
       } else if (percentLived < 50) {
-        return 'The first half of life has passed. Time to be more serious in worship and building legacy.';
+        return 'Paruh pertama hidup telah berlalu. Saatnya lebih serius dalam beribadah dan membangun legacy.';
       } else if (percentLived < 75) {
-        return 'Time is increasingly limited. Increase istighfar, charity, and prepare provisions for the hereafter.';
+        return 'Waktu semakin terbatas. Perbanyak istighfar, sedekah, dan persiapkan bekal akhirat.';
       } else {
-        return 'Age is very twilight. Focus on repentance, dhikr, and leaving a good spiritual legacy.';
+        return 'Usia sudah sangat senja. Fokus pada taubat, dzikir, dan meninggalkan warisan spiritual yang baik.';
       }
     }
 
@@ -694,35 +693,35 @@
         {
           arab: "اغْتَنِمْ خَمْسًا قَبْلَ خَمْسٍ: حَيَاتَكَ قَبْلَ مَوْتِكَ",
           latin: "Ightanim khamsan qabla khams: hayaataka qabla mawtika",
-          terjemah: "Make use of five things before five things: your life before your death",
-          source: "Narrated by Hakim"
+          terjemah: "Manfaatkanlah lima perkara sebelum lima perkara: hidupmu sebelum matimu",
+          source: "HR. Hakim"
         },
         {
           arab: "كُلُّ ابْنِ آدَمَ خَطَّاءٌ وَخَيْرُ الْخَطَّائِينَ التَّوَّابُونَ",
           latin: "Kullu ibni Adama khatha'un wa khayrul khatha'inat tawwabun",
-          terjemah: "Every son of Adam sins, and the best of sinners are those who repent",
-          source: "Narrated by Tirmidhi"
+          terjemah: "Setiap anak Adam pasti berbuat salah, dan sebaik-baik orang yang bersalah adalah yang bertaubat",
+          source: "HR. Tirmidzi"
         },
         {
           arab: "مَا نَقَصَ مَالٌ مِنْ صَدَقَةٍ",
           latin: "Ma naqasha malun min shadaqah",
-          terjemah: "Wealth does not decrease due to charity",
-          source: "Narrated by Muslim"
+          terjemah: "Harta tidak akan berkurang karena sedekah",
+          source: "HR. Muslim"
         }
       ];
       const selectedHadis = hadisList[Math.floor(Math.random() * hadisList.length)];
 
       const nikmatList = [
-        "🎵 The blessing of hearing the voice of loved ones",
-        "💨 The blessing of being able to breathe easily",
-        "⏰ The blessing of being given time to worship",
-        "🌅 The blessing of seeing the beauty of Allah's creation",
-        "💝 The blessing of having a loving family",
-        "🍃 The blessing of clean water for ablution",
-        "📖 The blessing of being able to read the Quran",
-        "🤲 The blessing of still being given the opportunity to repent",
-        "🌙 The blessing of being able to feel peaceful nights",
-        "☀️ The blessing of sunlight every morning"
+        "🎵 Nikmat mendengar suara orang yang dicintai",
+        "💨 Nikmat dapat bernapas dengan mudah",
+        "⏰ Nikmat diberi waktu untuk beribadah",
+        "🌅 Nikmat melihat keindahan ciptaan Allah",
+        "💝 Nikmat memiliki keluarga yang menyayangi",
+        "🍃 Nikmat air bersih untuk wudhu",
+        "📖 Nikmat dapat membaca Al-Quran",
+        "🤲 Nikmat masih diberi kesempatan bertaubat",
+        "🌙 Nikmat dapat merasakan malam yang tenang",
+        "☀️ Nikmat cahaya matahari setiap pagi"
       ];
       const randomNikmat = nikmatList[Math.floor(Math.random() * nikmatList.length)];
 
@@ -741,12 +740,12 @@
         </div>
         
         <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(220, 38, 38, 0.05); border-radius: 12px; border-left: 4px solid #dc2626;">
-          <div style="font-weight: 600; color: #dc2626; margin-bottom: 0.5rem;">⚡ Important Reminder:</div>
+          <div style="font-weight: 600; color: #dc2626; margin-bottom: 0.5rem;">⚡ Pengingat Penting:</div>
           <div style="font-size: 0.9rem; color: #374151;">
-            • Every second is a trust that will be held accountable<br>
-            • Death can come anytime, regardless of age<br>
-            • Good deeds today are the best investment for the hereafter<br>
-            • Don't delay goodness, because time waits for no one
+            • Setiap detik adalah amanah yang akan dimintai pertanggungjawaban<br>
+            • Kematian bisa datang kapan saja, tanpa memandang usia<br>
+            • Amal shaleh hari ini adalah investasi terbaik untuk akhirat<br>
+            • Jangan tunda kebaikan, karena waktu tidak menunggu siapa pun
           </div>
         </div>
       `;
@@ -754,16 +753,16 @@
 
     function showFloatingReminder() {
       const reminderList = [
-        "💭 Every breath is a trust from Allah",
-        "⏳ Time is a sword, use it before it's too late",
-        "🌙 Night and day alternate as signs of His power",
-        "🤲 Repent before death comes",
-        "📿 Increase dhikr in every spare time",
-        "💚 Every second is an opportunity for good deeds",
-        "⚰️ Remember death, the destroyer of pleasures",
-        "🕐 Time passes faster than we think",
-        "🔥 The Day of Judgment is getting closer",
-        "💎 Time is more precious than gold and diamonds"
+        "💭 Setiap nafas adalah amanah dari Allah",
+        "⏳ Waktu adalah pedang, gunakan sebelum terlambat",
+        "🌙 Malam dan siang berganti sebagai tanda kekuasaan-Nya",
+        "🤲 Bertaubatlah sebelum ajal menjemput",
+        "📿 Perbanyak dzikir di setiap waktu senggang",
+        "💚 Setiap detik adalah kesempatan beramal shaleh",
+        "⚰️ Ingatlah mati, penghancur kelezatan",
+        "🕐 Waktu berlalu lebih cepat dari yang kita kira",
+        "🔥 Hari kiamat semakin dekat",
+        "💎 Waktu lebih berharga dari emas dan berlian"
       ];
       const randomReminder = reminderList[Math.floor(Math.random() * reminderList.length)];
       
@@ -781,21 +780,21 @@
 
     function tampilkanKebaikan() {
       const aksiList = [
-        "😊 Smile at someone today",
-        "🙏 Say 'Alhamdulillahi rabbil alamiin' with devotion",
-        "🤝 Offer help to those in need",
-        "🤲 Say istighfar 100 times today",
-        "🧘 Reflect on Allah's blessings in your life",
-        "📱 Call your parents and pray for them",
-        "💝 Give charity, even if just a smile",
-        "📖 Read one verse of the Quran and contemplate its meaning",
-        "🌱 Care for the environment as a form of gratitude",
-        "🕌 Pray on time with full presence of heart",
-        "🤗 Forgive someone who has hurt you",
-        "📚 Teach beneficial knowledge to others",
-        "🍞 Feed the hungry",
-        "💧 Give water to the thirsty",
-        "🌙 Perform tahajud prayer and supplicate to Allah"
+        "😊 Tersenyumlah pada seseorang hari ini",
+        "🙏 Ucapkan 'Alhamdulillahi rabbil alamiin' dengan khusyuk",
+        "🤝 Tawarkan bantuan kepada yang membutuhkan",
+        "🤲 Istighfar 100 kali hari ini",
+        "🧘 Renungkan nikmat Allah dalam hidupmu",
+        "📱 Hubungi orang tua dan doakan mereka",
+        "💝 Berikan sedekah, meski hanya senyuman",
+        "📖 Baca satu ayat Al-Quran dan renungkan maknanya",
+        "🌱 Rawat lingkungan sebagai bentuk syukur",
+        "🕌 Shalat tepat waktu dengan penuh kehadiran hati",
+        "🤗 Memaafkan seseorang yang pernah menyakitimu",
+        "📚 Ajarkan ilmu yang bermanfaat kepada orang lain",
+        "🍞 Beri makan orang yang lapar",
+        "💧 Berikan air kepada yang haus",
+        "🌙 Shalat tahajud dan bermunajat kepada Allah"
       ];
       const randomAksi = aksiList[Math.floor(Math.random() * aksiList.length)];
       
@@ -804,27 +803,27 @@
         <div style="text-align: center;">
           <div style="font-size: 1.2rem; margin-bottom: 0.5rem;">${randomAksi}</div>
           <div style="font-size: 0.85rem; color: #6b7280; font-style: italic;">
-            "Whoever does good equal to the weight of an atom will see it" - QS. Az-Zalzalah: 7
+            "Barangsiapa berbuat kebaikan seberat biji zarrah, niscaya dia akan melihat (balasan)nya" - QS. Az-Zalzalah: 7
           </div>
         </div>
       `;
       aksiKebaikan.classList.add('show');
     }
 
-    // Auto-reminder for mobile
+    // Auto-reminder untuk mobile
     if (window.innerWidth <= 768) {
       const floatingReminder = document.getElementById('floatingReminder');
       floatingReminder.classList.add('show');
     }
 
-    // Add periodic reminder every 30 seconds
+    // Tambahkan pengingat berkala setiap 30 detik
     setInterval(() => {
       const quickReminders = [
-        "⏰ How many minutes have passed since the last dhikr?",
-        "🕐 Time keeps running, don't waste it!",
-        "💭 Remember, every second will be held accountable",
-        "🤲 Have you been grateful for the blessings given?",
-        "📿 Take a moment to do dhikr"
+        "⏰ Sudah berapa menit berlalu sejak terakhir berdzikir?",
+        "🕐 Waktu terus berjalan, jangan sia-siakan!",
+        "💭 Ingat, setiap detik akan dimintai pertanggungjawaban",
+        "🤲 Sudahkah bersyukur atas nikmat yang diberikan?",
+        "📿 Luangkan waktu sejenak untuk berdzikir"
       ];
       
       const randomQuickReminder = quickReminders[Math.floor(Math.random() * quickReminders.length)];
